@@ -1,0 +1,26 @@
+         import java.util.InputMismatchException;
+     import java.util.Scanner;
+             public class Main {
+            public static void main(String[] args) {
+        int array[] = new int[7];
+        try {
+            System.out.println(array[9]);}
+           catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("The index you have entered is invalid");}
+
+
+        System.out.println("plase enter number");
+        Scanner s =new Scanner(System.in);
+        int x= s.nextInt();
+        num(x);
+
+        }
+     public static void num(int x) {
+    try {
+        if (x>=1&&x<=3)
+            System.out.println("valld input");
+     }catch (InputMismatchException e) {
+        System.out.println("enter 1,2,3");
+    }
+}
+}
